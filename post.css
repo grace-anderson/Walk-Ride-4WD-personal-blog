@@ -241,6 +241,10 @@ a:active {
   background-color: #5496bf;
 }
 
+.button-outline a {
+  color: #f2071b;
+}
+
 .button-outline a:link {
   color: #f2071b;
 }
@@ -418,7 +422,6 @@ form.search::after {
   margin: 10px 0;
 }
 
-
 .social-sharing-post {
   display: grid;
   grid-template-columns: 33% 33% 33%;
@@ -426,7 +429,6 @@ form.search::after {
   grid-gap: 2px;
   justify-items: center;
 }
-
 
 /* TOP button fixed to bottom of page */
 .fixed-bottom {
@@ -513,7 +515,7 @@ form.search::after {
   .subscribe {
     margin-bottom: 0;
   }
-  
+
   .social-sharing-post {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -528,12 +530,8 @@ form.search::after {
   }
 
   /* TOP button */
-  .fixed-bottom {
-    bottom: 6%;
-  }
-
-  .fixed-bottom button {
-    padding: 1.4rem;
+  #hide-top {
+    display: none;
   }
 
   /* page footer */
@@ -548,4 +546,4 @@ form.search::after {
     padding: 1rem;
     margin: 2rem 0;
   }
-}   /* end container for medium screen */
+} /* end container for medium screen */

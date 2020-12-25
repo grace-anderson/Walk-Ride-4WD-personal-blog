@@ -241,6 +241,10 @@ a:active {
   background-color: #5496bf;
 }
 
+.button-outline a {
+  color: #f2071b;
+}
+
 .button-outline a:link {
   color: #f2071b;
 }
@@ -476,15 +480,12 @@ form.search::after {
     justify-items: left;
   }
 
-  /*TOP button*/
+  /*TOP button - hide*/
 
-  .fixed-bottom {
-    bottom: 6%;
-  }
+#hide-top {
+  display:none;
+}
 
-  .fixed-bottom button {
-    padding: 1.4rem;
-  }
 
   /* page footer */
   .page-footer {
