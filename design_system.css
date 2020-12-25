@@ -550,7 +550,7 @@ form.search button {
   background: #1b80bf;
   color: white;
   font-size: 1.5rem;
-  border: 1px solid grey;
+  border: 1px solid #444;
   border-left: none;
   cursor: pointer;
 }
@@ -566,7 +566,6 @@ form.search::after {
 }
 
 .social-sharing-blog-home {
-  border: 3px solid pink;
   display: grid;
   grid-template-columns: 33% 33% 33%;
   grid-template-rows: 1fr 1fr;
