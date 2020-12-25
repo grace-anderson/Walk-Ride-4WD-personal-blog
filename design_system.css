@@ -368,6 +368,10 @@ a:active {
   background-color: #5496bf;
 }
 
+.button-outline a {
+  color: #f2071b;
+}
+
 .button-outline a:link {
   color: #f2071b;
 }
