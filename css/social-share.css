@@ -1,0 +1,87 @@
+.social-sharing-blog {
+  display: grid;
+  width: 100%;
+  padding-bottom: 5%;
+  grid-template-columns: 30% 30% 30%;
+  column-gap: 5%;
+  row-gap: 10%;
+  justify-items: center;
+  align-items: start;
+  grid-template-areas:
+    "insta meetup github"
+    "twitter facebook youtube";
+}
+
+#instagram {
+  grid-area: insta;
+}
+
+#meetup {
+  grid-area: meetup;
+}
+
+#github {
+  grid-area: github;
+}
+
+#twitter {
+  grid-area: twitter;
+}
+
+#facebook {
+  grid-area: facebook;
+}
+
+#youtube {
+  grid-area: youtube;
+}
+
+.social-icon img {
+  width: 50%;
+}
+
+/* Medium screens - 600px and over */
+@media (min-width: 600px) {
+  .social-sharing-blog {
+    display: grid;
+    width: 100%;
+    padding-bottom: 5%;
+    grid-template-columns: 45% 45%;
+    column-gap: 5%;
+    row-gap: 10%;
+    justify-items: center;
+    align-items: start;
+    grid-template-areas:
+      "insta meetup"
+      "github twitter"
+      "facebook youtube";
+  }
+
+  #instagram {
+    grid-area: insta;
+  }
+
+  #meetup {
+    grid-area: meetup;
+  }
+
+  #github {
+    grid-area: github;
+  }
+
+  #twitter {
+    grid-area: twitter;
+  }
+
+  #facebook {
+    grid-area: facebook;
+  }
+
+  #youtube {
+    grid-area: youtube;
+  }
+
+  .social-icon img {
+    width: 30%;
+  }
+}

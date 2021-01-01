@@ -135,13 +135,16 @@ strong {
   color: #fff;
 }
 
-.underline {
-  text-decoration: underline;
-}
-
 .center {
   text-align: center;
 }
+
+blockquote {
+  font-style: italic;
+  line-height: 2rem;
+  text-align: center;
+}
+
 
 /*lists */
 ul {
@@ -614,6 +617,12 @@ form.search::after {
   .container {
     width: 90%;
     margin: auto;
+  }
+
+  /* medium screen - text */
+  blockquote {
+    line-height: 2.6rem;
+    font-size: 2rem;
   }
 
   /* medium screen home and top buttons */

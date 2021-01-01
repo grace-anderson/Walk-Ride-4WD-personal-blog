@@ -1,5 +1,5 @@
 /* import social sharing css */
-@import url("social-share.css"); 
+@import url("social-share.css");
 
 /* import Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,300;0,600;1,300&family=Work+Sans&display=swap");
@@ -104,6 +104,12 @@ strong {
   text-align: center;
 }
 
+blockquote {
+  font-style: italic;
+  line-height: 2rem;
+  text-align: center;
+}
+
 /*lists */
 ul {
   margin: 1rem 0;
@@ -155,7 +161,7 @@ h3 {
 h5,
 h6,
 .nav-heading {
-  margin: 2rem 0 0;
+  margin: 2rem 0;
 }
 
 h4,
@@ -274,25 +280,24 @@ a:active {
 
 /* Mobile first set up (width < 600px) */
 
-/* HOME button fixed to top of page */
-.fixed-home {
-  position: fixed;
-  top: 0;
-  right: 1%;
-  /* margin: 2.4rem 0; */
-  z-index: 99;
-}
-
-.fixed-home button {
-  padding: 1rem;
-}
-
 /* container*/
 .container {
-  /* Set display to grid */
+  /* Set container to display as grid with one column */
   display: grid;
   width: 90%;
   margin: auto;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "homepage-post"
+    "homepage-sidebar";
+}
+
+.blog-homepage-post {
+  grid-area: homepage-post;
+}
+
+.blog-homepage-sidebar {
+  grid-area: homepage-sidebar;
 }
 
 /* blog homepage header */
@@ -315,72 +320,46 @@ a:active {
   font-size: 5rem;
 }
 
-/* post */
+/* blog homepage post */
 .post-heading {
   text-align: center;
+  margin-right: 2.5rem;
   margin-bottom: 3rem;
 }
 
-/* author info */
-.author-info-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2rem;
-}
-
-.author-left-text {
-  order: 1;
-  text-align: right;
-  margin-right: 0.2rem;
-  font-size: 1.2rem;
-}
-
-.author-circle {
-  order: 2;
-  max-width: 20%;
-}
-
-.author-photo {
-  border-radius: 50%;
-}
-
-.author-right-text {
-  order: 3;
-  text-align: left;
-  margin-left: 0.2rem;
-  font-size: 1.2rem;
-}
-
-/* post photo */
 .post-photo img {
-  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
-/* subscribe */
-.subscribe {
+.photo-caption {
   margin-bottom: 2rem;
 }
 
-/* card */
-.card {
+/* avatar*/
+
+.avatar-content {
   display: flex;
   flex-direction: column;
-  align-content: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar img {
+  border-radius: 50%;
+  width: 50%;
+  margin: 10% 0 5% 25%;
+  align-self: center;
+}
+
+.avatar-description {
   width: 100%;
-  margin: 5% 0 20%;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-}
-
-.card-container {
+  height: auto;
+  color: #444;
   text-align: center;
-  padding: 0.2rem;
+  line-height: 1.2;
+  margin: 0% 10%;
 }
 
 /* search */
@@ -425,7 +404,7 @@ form.search::after {
   position: fixed;
   bottom: 0%;
   right: 1%;
-  margin: 4.5rem 0;
+  margin: 2.4rem 0;
   z-index: 98;
 }
 
@@ -467,51 +446,46 @@ form.search::after {
   background-color: #444;
   padding: 1rem;
   color: #fff;
-  margin: 1rem 0;
+  margin: 0 0 1rem;
 }
 
 /*-------------------------------------------------------------------------*/
 /* Medium screens - 600px and over */
+/* Container set as grid for medium screens - two columns, body and sidebar */
 @media (min-width: 600px) {
   .container {
     margin: auto;
     display: grid;
     grid-template-columns: 70% 30%;
-    grid-template-rows: repeat(2, fr);
-    grid-gap: 25px;
+    gap: 25px;
     justify-content: left;
-    grid-template-areas:
-      "posthead postside"
-      "post postside";
+    grid-template-areas: "homepost homeside";
   }
 
-  .post-header {
-    grid-area: posthead;
+  .blog-homepage-post {
+    grid-area: homepost;
     margin-right: 5rem;
   }
 
-  .post-body {
-    grid-area: post;
-    margin-right: 5rem;
+  .blog-homepage-sidebar {
+    grid-area: homeside;
+  }
+  /* end container for medium screen */
+
+  /* medium screen - text */
+  blockquote {
+    line-height: 2.6rem;
+    font-size: 2rem;
   }
 
-  .post-sidebar {
-    grid-area: postside;
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
+  .avatar img {
+    border-radius: 50%;
+    width: 60%;
+    margin: 10% 0 5% 20%;
+    align-self: center;
   }
 
-  .subscribe {
-    margin-bottom: 0;
-  }
-
-  /* HOME button */
-  .fixed-home button {
-    padding: 1.4rem;
-  }
-
-  /* TOP button */
+  /*TOP button - hide*/
   #hide-top {
     display: none;
   }
@@ -528,4 +502,4 @@ form.search::after {
     padding: 1rem;
     margin: 2rem 0;
   }
-} /* end container for medium screen */
+}
