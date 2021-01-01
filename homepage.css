@@ -273,10 +273,22 @@ a:active {
 
 /* container*/
 .container {
-  /* Set display to grid */
+  /* Set container to display as grid with one column */
   display: grid;
   width: 90%;
-  margin: auto;
+  margin: auto auto 1rem;
+  grid-template-columns: 100%;
+  grid-template-areas:
+    "homepage-post"
+    "homepage-sidebar";
+}
+
+.blog-homepage-post {
+  grid-area: homepage-post;
+}
+
+.blog-homepage-sidebar {
+  grid-area: homepage-sidebar;
 }
 
 /* blog homepage header */
@@ -318,14 +330,14 @@ a:active {
 /* avatar*/
 
 .avatar-content {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: center;
-    justify-content: center;
-  }
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
 
-.avatar img{
+.avatar img {
   border-radius: 50%;
   width: 50%;
   margin: 10% 0 5% 25%;
@@ -381,13 +393,17 @@ form.search::after {
 /* social sharing */
 .social-sharing-blog {
   display: grid;
+  width: 100%;
+  padding-bottom: 5%;
   grid-template-columns: 30% 30% 30%;
-  grid-template-rows: 1fr 1fr;
-  gap: 5%;
+  grid-template-rows: minmax(5px, 10px), minmax(5px, 10px);
+  column-gap: 5%;
+row-gap: 10%;
   justify-items: center;
-  grid-template-areas: 
-   "insta meetup github"
-   "twitter facebook social-icon" ;
+  align-items: start;
+  grid-template-areas:
+    "insta meetup github"
+    "twitter facebook youtube";
 }
 
 #instagram {
@@ -412,6 +428,10 @@ form.search::after {
 
 #youtube {
   grid-area: youtube;
+}
+
+.social-icon img {
+  width: 60%;
 }
 
 /* TOP button fixed to bottom of page */
@@ -461,21 +481,20 @@ form.search::after {
   background-color: #444;
   padding: 1rem;
   color: #fff;
-  margin: 1rem 0;
+  margin: 0 0 1rem;
 }
 
 /*-------------------------------------------------------------------------*/
 /* Medium screens - 600px and over */
+/* Container set as grid for medium screens - two columns, body and sidebar */
 @media (min-width: 600px) {
   .container {
-    margin: auto;
+    margin: 1rem;
     display: grid;
     grid-template-columns: 70% 30%;
-    grid-template-rows: fr;
     gap: 25px;
     justify-content: left;
-    grid-template-areas:
-      "homepost homeside"
+    grid-template-areas: "homepost homeside";
   }
 
   .blog-homepage-post {
@@ -484,11 +503,11 @@ form.search::after {
   }
 
   .blog-homepage-sidebar {
-      grid-area: homeside;
+    grid-area: homeside;
   }
-/* end container for medium screen */
+  /* end container for medium screen */
 
-.avatar img{
+  .avatar img {
     border-radius: 50%;
     width: 60%;
     margin: 10% 0 5% 20%;
@@ -497,18 +516,51 @@ form.search::after {
 
   .social-sharing-blog {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(3 1fr);
-    gap: 2px;
-    justify-items: left;
+    width: 100%;
+    padding-bottom: 5%;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5%;
+    justify-items: center;
+    align-items: start;
+    grid-template-areas:
+      "insta meetup"
+      "github twitter"
+      "facebook youtube";
+  }
+
+  #instagram {
+    grid-area: insta;
+  }
+
+  #meetup {
+    grid-area: meetup;
+  }
+
+  #github {
+    grid-area: github;
+  }
+
+  #twitter {
+    grid-area: twitter;
+  }
+
+  #facebook {
+    grid-area: facebook;
+  }
+
+  #youtube {
+    grid-area: youtube;
+  }
+
+  .social-icon img {
+    width: 60%;
   }
 
   /*TOP button - hide*/
-
-#hide-top {
-  display:none;
-}
-
+  #hide-top {
+    display: none;
+  }
 
   /* page footer */
   .page-footer {
