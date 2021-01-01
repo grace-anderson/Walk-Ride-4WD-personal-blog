@@ -201,28 +201,27 @@ a:active {
 }
 
 /* Navbar (mobile < 600px) */
-/* navbar container*/
-.dropdown {
-  grid-area: nav;
-  margin: 0 -10%;
-}
 /* dropdown button */
 .button-nav {
   width: 100%;
-  margin: 0 -10%;
   font-size: 2rem;
   font-family: "Work Sans", sans-serif;
   text-align: center;
   text-decoration: none;
-  margin: 0;
   padding: 1.4rem;
   cursor: pointer;
+}
+/* navbar container*/
+.dropdown {
+  width: 100%;
+  position: relative;
+  display: inline-block;
 }
 /* dropdown content (hidden by default) */
 .dropdown-content {
   width: 100%;
-  margin: auto;
   display: none;
+  position: absolute;
   font-size: 2rem;
   font-family: "Work Sans", sans-serif;
   background-color: #fff;
@@ -246,7 +245,7 @@ a:active {
   display: block;
 }
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {
+.dropdown:hover .button-nav {
   background-color: #595738;
   color: #fff;
 }
@@ -514,16 +513,9 @@ form.search::after {
     grid-template-columns: 70% 30%;
     gap: 25px;
     justify-content: left;
-    grid-template-areas:
-      "homepost nav"
-      "homepost homeside";
+    grid-template-areas: 
+    "homepost homeside";
   }
-
-  /* navbar container (within page container) */
-  .dropdown {
-    grid-area: nav;
-  }
-  /* end navbar */
 
   .blog-homepage-post {
     grid-area: homepost;
@@ -534,6 +526,15 @@ form.search::after {
     grid-area: homeside;
   }
   /* end container for medium screen */
+
+  /* navbar */
+  .button-nav {
+    max-width: 200px;
+  }
+  .dropdown {
+    max-width: 200px;
+  }
+
 
   /* medium screen - text */
   blockquote {
