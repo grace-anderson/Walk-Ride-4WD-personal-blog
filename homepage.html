@@ -30,6 +30,16 @@
     <!-- Grid container-->
     <div class="container">
         <!-- Blog homepage post -->
+        <navbar>
+            <div class="dropdown">
+                <button class="button-nav button-red">MENU</button>
+                <div class="dropdown-content">
+                    <a href="#about">ABOUT</a>
+                    <a href="#recent">RECENT POSTS</a>
+                    <a href="#subscribe">SUBSCRIBE</a>
+                </div>
+            </div>
+        </navbar>
         <div class="blog-homepage-post">
             <h1 class="post-heading">Downhill mountain biking at Stromlo</h1>
             <figure><img src="images/stromlo.jpg" alt="Mountain biker at Stromlo Forest Park">
@@ -56,7 +66,7 @@
         </div>
         <!--Blog homepage sidebar -->
         <div class="blog-homepage-sidebar">
-            <div class="avatar-content">
+            <div id="about" class="avatar-content">
                 <div class="avatar"><img src="images/woman-mtnbiking.png" alt="Grace mountainbiking"></div>
                 <div class="small avatar-description">Hi! I'm Grace. I love getting outdoors. I'm lucky enough to live
                     in the greatest country in the world: Australia! My home is in Australia's best kept secret:
@@ -68,7 +78,7 @@
                 <button type="submit"><i class="fa fa-search"></i></button>
             </form>
             <!--Recent post links-->
-            <h3>Recent Posts</h3>
+            <h3 id="recent">Recent Posts</h3>
             <ul>
                 <li><a href="homepage.html">4WDing in the Brindabellas</a></li>
                 <li><a href="homepage.html">Cycling Thredbo</a></li>
@@ -95,7 +105,7 @@
             <div class="footer-link"><a href="design_system.html">Design System</a>
             </div>
             <div class="small copyright">&copy;Grace Anderson 2020</div>
-            <div class="footer-link"><a href="homepage.html">Subscribe</a></div>
+            <div id="subscribe" class="footer-link"><a href="homepage.html">Subscribe</a></div>
         </div>
 
         <link rel="stylesheet" type="text/css" href="/" media="print" />

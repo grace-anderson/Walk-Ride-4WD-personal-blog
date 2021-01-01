@@ -200,6 +200,58 @@ a:active {
   cursor: pointer;
 }
 
+/* Navbar (mobile < 600px) */
+/* navbar container*/
+.dropdown {
+  grid-area: nav;
+  margin: 0 -10%;
+}
+/* dropdown button */
+.button-nav {
+  width: 100%;
+  margin: 0 -10%;
+  font-size: 2rem;
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  margin: 0;
+  padding: 1.4rem;
+  cursor: pointer;
+}
+/* dropdown content (hidden by default) */
+.dropdown-content {
+  width: 100%;
+  margin: auto;
+  display: none;
+  font-size: 2rem;
+  font-family: "Work Sans", sans-serif;
+  background-color: #fff;
+  text-align: center;
+  z-index: 95;
+}
+/* links inside the dropdown */
+.dropdown-content a {
+  color: #1b80bf;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #8a8c56;
+  color: #fff;
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: #595738;
+  color: #fff;
+}
+/* end of navbar*/
+
 /* buttons */
 .button {
   font-size: 1.6rem;
@@ -208,6 +260,7 @@ a:active {
   text-decoration: none;
   margin: 1rem 0;
   padding: 1.4rem;
+  cursor: pointer;
 }
 
 .button-small {
@@ -289,6 +342,7 @@ a:active {
   margin: auto;
   grid-template-columns: 100%;
   grid-template-areas:
+    "nav"
     "homepage-post"
     "homepage-sidebar";
 }
@@ -309,7 +363,7 @@ a:active {
   justify-content: space-around;
   flex-wrap: wrap;
   background-color: #444;
-  padding: 4rem 1rem 2rem;
+  padding: 1rem;
   text-align: center;
   margin: 0;
 }
@@ -317,7 +371,7 @@ a:active {
 .blog-header h1 {
   color: #fff;
   text-transform: uppercase;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
   font-size: 5rem;
 }
 
@@ -460,8 +514,16 @@ form.search::after {
     grid-template-columns: 70% 30%;
     gap: 25px;
     justify-content: left;
-    grid-template-areas: "homepost homeside";
+    grid-template-areas:
+      "homepost nav"
+      "homepost homeside";
   }
+
+  /* navbar container (within page container) */
+  .dropdown {
+    grid-area: nav;
+  }
+  /* end navbar */
 
   .blog-homepage-post {
     grid-area: homepost;
