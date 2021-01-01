@@ -1,3 +1,6 @@
+/* import social sharing css */
+@import url("social-share.css");
+
 /* import Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,300;0,600;1,300&family=Work+Sans&display=swap");
 
@@ -276,7 +279,7 @@ a:active {
   /* Set container to display as grid with one column */
   display: grid;
   width: 90%;
-  margin: auto auto 1rem;
+  margin: auto;
   grid-template-columns: 100%;
   grid-template-areas:
     "homepage-post"
@@ -390,50 +393,6 @@ form.search::after {
   display: table;
 }
 
-/* social sharing */
-.social-sharing-blog {
-  display: grid;
-  width: 100%;
-  padding-bottom: 5%;
-  grid-template-columns: 30% 30% 30%;
-  grid-template-rows: minmax(5px, 10px), minmax(5px, 10px);
-  column-gap: 5%;
-row-gap: 10%;
-  justify-items: center;
-  align-items: start;
-  grid-template-areas:
-    "insta meetup github"
-    "twitter facebook youtube";
-}
-
-#instagram {
-  grid-area: insta;
-}
-
-#meetup {
-  grid-area: meetup;
-}
-
-#github {
-  grid-area: github;
-}
-
-#twitter {
-  grid-area: twitter;
-}
-
-#facebook {
-  grid-area: facebook;
-}
-
-#youtube {
-  grid-area: youtube;
-}
-
-.social-icon img {
-  width: 60%;
-}
-
 /* TOP button fixed to bottom of page */
 .fixed-bottom {
   position: fixed;
@@ -489,7 +448,7 @@ row-gap: 10%;
 /* Container set as grid for medium screens - two columns, body and sidebar */
 @media (min-width: 600px) {
   .container {
-    margin: 1rem;
+    margin: auto;
     display: grid;
     grid-template-columns: 70% 30%;
     gap: 25px;
@@ -512,49 +471,6 @@ row-gap: 10%;
     width: 60%;
     margin: 10% 0 5% 20%;
     align-self: center;
-  }
-
-  .social-sharing-blog {
-    display: grid;
-    width: 100%;
-    padding-bottom: 5%;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: repeat(3, 1fr);
-    gap: 5%;
-    justify-items: center;
-    align-items: start;
-    grid-template-areas:
-      "insta meetup"
-      "github twitter"
-      "facebook youtube";
-  }
-
-  #instagram {
-    grid-area: insta;
-  }
-
-  #meetup {
-    grid-area: meetup;
-  }
-
-  #github {
-    grid-area: github;
-  }
-
-  #twitter {
-    grid-area: twitter;
-  }
-
-  #facebook {
-    grid-area: facebook;
-  }
-
-  #youtube {
-    grid-area: youtube;
-  }
-
-  .social-icon img {
-    width: 60%;
   }
 
   /*TOP button - hide*/

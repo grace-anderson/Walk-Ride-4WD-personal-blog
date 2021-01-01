@@ -1,3 +1,6 @@
+/* import social sharing css */
+@import url("social-share.css"); 
+
 /* import Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,300;0,600;1,300&family=Work+Sans&display=swap");
 
@@ -417,19 +420,6 @@ form.search::after {
   display: table;
 }
 
-/* social sharing */
-.social-layout {
-  margin: 10px 0;
-}
-
-.social-sharing-post {
-  display: grid;
-  grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 2px;
-  justify-items: center;
-}
-
 /* TOP button fixed to bottom of page */
 .fixed-bottom {
   position: fixed;
@@ -514,14 +504,6 @@ form.search::after {
 
   .subscribe {
     margin-bottom: 0;
-  }
-
-  .social-sharing-post {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(3 1fr);
-    grid-gap: 2px;
-    justify-items: left;
   }
 
   /* HOME button */
