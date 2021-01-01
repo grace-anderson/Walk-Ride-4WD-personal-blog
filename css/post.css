@@ -1,4 +1,5 @@
-/* import social sharing css */
+/* import css */
+@import url("reset.css");
 @import url("social-share.css");
 
 /* import Google fonts */
@@ -360,8 +361,13 @@ a:active {
 }
 
 /* post photo */
-.post-photo img {
-  width: 100%;
+figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+figcaption {
+  margin-bottom: 2rem;
 }
 
 /* subscribe */
