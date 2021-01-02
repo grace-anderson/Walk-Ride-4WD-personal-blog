@@ -1,0 +1,47 @@
+/* format headings and text for subscribe form */
+.subscribe-heading,
+.subscribe-text
+ {
+    color: #fff;
+    font-family: "Work Sans", sans-serif;
+}
+
+/* Style the form element with a border around it */
+form {
+    border: 4px solid #ccc;
+  }
+  
+  /* Add some padding and blue background color to containers */
+  .subscribe-container {
+    padding: 1rem 2rem;
+    background-color: #8a8c56;
+  }
+  
+  /* Style the input elements and the submit button */
+  input[type=text], input[type=submit] {
+    font-family: "Work Sans", sans-serif;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Add margins to the checkbox */
+  input[type=checkbox] {
+    margin-top: 16px;
+  }
+  
+  /* Style the submit button */
+  input[type=submit] {
+    background-color: #595738;
+    color: #fff;
+    border: none;
+    font-size: 1.6rem;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #5496bf;
+    cursor: pointer;
+  }

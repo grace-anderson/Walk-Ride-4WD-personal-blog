@@ -1,6 +1,7 @@
 /* import css */
-@import url("reset.css");
 @import url("social-share.css");
+@import url("subscribe.css");
+@import url("reset.css");
 
 /* import Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,300;0,600;1,300&family=Work+Sans&display=swap");
@@ -341,9 +342,9 @@ a:active {
   margin: auto;
   grid-template-columns: 100%;
   grid-template-areas:
-    "nav"
     "homepage-post"
-    "homepage-sidebar";
+    "homepage-sidebar"
+    "subscribe";
 }
 
 .blog-homepage-post {
@@ -353,6 +354,12 @@ a:active {
 .blog-homepage-sidebar {
   grid-area: homepage-sidebar;
 }
+
+.subscribe-form {
+  grid-area: subscribe;
+  margin: 5% 0;
+}
+/* end of container (<600px */
 
 /* blog homepage header */
 .blog-header {
@@ -377,7 +384,6 @@ a:active {
 /* blog homepage post */
 .post-heading {
   text-align: center;
-  margin-right: 2.5rem;
   margin-bottom: 3rem;
 }
 
@@ -391,7 +397,6 @@ figcaption {
 }
 
 /* avatar*/
-
 .avatar-content {
   display: flex;
   flex-direction: column;
@@ -423,8 +428,8 @@ figcaption {
 }
 
 form.search input[type="text"] {
-  padding: 10px;
-  font-size: 1.5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
   border: 1px solid #444;
   float: left;
   width: 70%;
@@ -432,14 +437,14 @@ form.search input[type="text"] {
 }
 
 form.search button {
+  padding: 1rem;
+  font-size: 1.8rem;
+  border: none;;
   float: left;
   width: 20%;
-  padding: 10px;
+  margin-top: 8px;
   background: #1b80bf;
   color: white;
-  font-size: 1.5rem;
-  border: 1px solid #444;
-  border-left: none;
   cursor: pointer;
 }
 
@@ -514,7 +519,8 @@ form.search::after {
     gap: 25px;
     justify-content: left;
     grid-template-areas: 
-    "homepost homeside";
+    "homepost homeside"
+    "subscribe homeside";
   }
 
   .blog-homepage-post {
@@ -525,16 +531,19 @@ form.search::after {
   .blog-homepage-sidebar {
     grid-area: homeside;
   }
+
+  .subscribe-form {
+    grid-area: subscribe;
+    margin: 5% 5rem 5% 0;
+  }
   /* end container for medium screen */
 
   /* navbar */
-  .button-nav {
+  .button-nav,
+  .dropdown
+   {
     max-width: 200px;
   }
-  .dropdown {
-    max-width: 200px;
-  }
-
 
   /* medium screen - text */
   blockquote {

@@ -5,8 +5,6 @@
   grid-template-columns: 30% 30% 30%;
   column-gap: 5%;
   row-gap: 10%;
-  justify-items: center;
-  align-items: start;
   grid-template-areas:
     "insta meetup github"
     "twitter facebook youtube";
@@ -14,30 +12,36 @@
 
 #instagram {
   grid-area: insta;
+  align-self: start;
 }
 
 #meetup {
   grid-area: meetup;
+  align-self: center;
 }
 
 #github {
   grid-area: github;
+  align-self: end;
 }
 
 #twitter {
   grid-area: twitter;
+  align-self: start;
 }
 
 #facebook {
   grid-area: facebook;
+  align-self: center;
 }
 
 #youtube {
   grid-area: youtube;
+  align-self: end;
 }
 
 .social-icon img {
-  width: 50%;
+  width: 60%;
 }
 
 /* Medium screens - 600px and over */
@@ -59,29 +63,35 @@
 
   #instagram {
     grid-area: insta;
+    align-self: start;
   }
 
   #meetup {
     grid-area: meetup;
+    align-self: end;
   }
 
   #github {
     grid-area: github;
+    align-self: start;
   }
 
   #twitter {
     grid-area: twitter;
+    justify-self: end;
   }
 
   #facebook {
     grid-area: facebook;
+    align-self: start;
   }
 
   #youtube {
     grid-area: youtube;
+    align-self: end;
   }
 
   .social-icon img {
-    width: 30%;
+    width: 50%;
   }
 }

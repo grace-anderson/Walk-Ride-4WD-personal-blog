@@ -319,6 +319,7 @@ a:active {
   text-decoration: none;
   margin: 1rem 0;
   padding: 1.4rem;
+  cursor: pointer;
 }
 
 .button-small {
@@ -341,6 +342,12 @@ a:active {
   color: #f2071b;
 }
 
+.button-subscribe {
+  background-color: #595738;
+  border: none;
+  color: #fff;
+}
+
 #button-one {
   order: 1;
 }
@@ -354,8 +361,16 @@ a:active {
   order: 4;
 }
 
+#button-five {
+  order: 5;
+}
+
 /* button links */
 .button-red a {
+  color: #fff;
+}
+
+.button-subscribe a {
   color: #fff;
 }
 
@@ -363,7 +378,15 @@ a:active {
   color: #fff;
 }
 
+.button-subscribe a:link {
+  color: #fff;
+}
+
 .button-red:link {
+  color: #fff;
+}
+
+.button-subscribe:link {
   color: #fff;
 }
 
@@ -371,7 +394,15 @@ a:active {
   background-color: #5496bf;
 }
 
+.button-subscribe:hover {
+  background-color: #5496bf;
+}
+
 .button-red:visited {
+  background-color: #5496bf;
+}
+
+.button-subscribe:visited {
   background-color: #5496bf;
 }
 
