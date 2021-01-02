@@ -310,7 +310,7 @@ a:active {
   justify-content: space-around;
   flex-wrap: wrap;
   background-color: #444;
-  padding: 1rem;
+  padding: 4rem 1rem 1rem;
   text-align: center;
   margin: 0;
 }
@@ -371,7 +371,7 @@ figcaption {
 }
 
 /* subscribe */
-.subscribe {
+.subscribe-button {
   margin-bottom: 2rem;
 }
 
@@ -519,7 +519,7 @@ form.search::after {
     align-content: space-around;
   }
 
-  .subscribe {
+  .subscribe-button {
     margin-bottom: 0;
   }
 
