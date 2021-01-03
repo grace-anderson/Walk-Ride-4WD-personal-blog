@@ -1,6 +1,7 @@
 /* import css */
 @import url("/css/reset.css");
 @import url("/css/social-share.css");
+@import url("/css/headings.css");
 
 /* import Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,300;0,600;1,300&family=Work+Sans&display=swap");
@@ -111,59 +112,8 @@ li {
 }
 
 /* headings */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.nav-heading,
-.emphasised-body-text {
-  font-family: "Work Sans", sans-serif;
-  color: #595738;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  margin: 3rem 0 1rem;
-}
-
-h1 {
-  font-size: 4rem;
-}
-
 #design-system-header {
   line-height: 1;
-}
-
-h2 {
-  font-size: 3.2rem;
-}
-
-h3 {
-  font-size: 2.8rem;
-}
-
-h5,
-h6,
-.nav-heading {
-  margin: 2rem 0;
-}
-
-h4,
-.nav-heading {
-  font-size: 2.4rem;
-  margin-bottom: 0.3rem;
-}
-
-h5 {
-  font-size: 2rem;
-}
-
-h6 {
-  font-size: 1.8rem;
 }
 
 /* header flexbox */
@@ -623,6 +573,11 @@ form.search::after {
 
   .fixed-home button {
     padding: 1.4rem;
+  }
+
+  .fixed-bottom {
+    right: 5%;
+    margin: 0;
   }
 
   .fixed-bottom button {

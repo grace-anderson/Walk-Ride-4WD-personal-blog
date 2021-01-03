@@ -1,0 +1,51 @@
+/* headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.nav-heading,
+.emphasised-body-text {
+  font-family: "Work Sans", sans-serif;
+  color: #595738;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 3rem 0 1rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+h5,
+h6,
+.nav-heading {
+  margin: 2rem 0 0;
+}
+
+h4,
+.nav-heading {
+  font-size: 2.4rem;
+  margin-bottom: 0.3rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.8rem;
+}
