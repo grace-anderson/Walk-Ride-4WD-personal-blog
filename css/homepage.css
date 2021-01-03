@@ -4,6 +4,7 @@
 @import url("/css/text.css");
 @import url("/css/lists.css");
 @import url("/css/links.css");
+@import url("/css/buttons.css");
 @import url("/css/social-share.css");
 @import url("/css/subscribe.css");
 
@@ -66,88 +67,7 @@ form {
 }
 /* end of navbar*/
 
-/* buttons */
-.button {
-  font-size: 1.6rem;
-  font-family: "Work Sans", sans-serif;
-  text-align: center;
-  text-decoration: none;
-  margin: 1rem 0;
-  padding: 1.4rem;
-  cursor: pointer;
-}
-
-.button-small {
-  width: 100px;
-}
-
-.button-large {
-  width: 100%;
-}
-
-.button-red {
-  background-color: #f2071b;
-  border: none;
-  color: #fff;
-}
-
-.button-outline {
-  background-color: #fff;
-  border: 1px solid #f2071b;
-  color: #f2071b;
-}
-
-/* button links */
-.button-red a {
-  color: #fff;
-}
-
-.button-red a:link {
-  color: #fff;
-}
-
-.button-red:link {
-  color: #fff;
-}
-
-.button-red:hover {
-  background-color: #5496bf;
-}
-
-.button-red:visited {
-  background-color: #5496bf;
-}
-
-.button-outline a {
-  color: #f2071b;
-}
-
-.button-outline a:link {
-  color: #f2071b;
-}
-
-.button-outline:link {
-  color: #f2071b;
-}
-
-.button-outline a:hover {
-  color: #fff;
-}
-
-.button-outline:hover {
-  background-color: #8a8c56;
-  border: 1px solid #595738;
-  color: #fff;
-}
-
-.button-outline:visited {
-  background-color: #8a8c56;
-  border: 1px solid #595738;
-  color: #fff;
-}
-
 /* Mobile first set up (width < 600px) */
-
 /* container (width < 600px)*/
 .container {
   /* Set container to display as grid with one column */
