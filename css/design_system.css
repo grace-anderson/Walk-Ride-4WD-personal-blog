@@ -1,62 +1,9 @@
 /* import css */
-@import url("reset.css");
-@import url("social-share.css");
+@import url("/css/reset.css");
+@import url("/css/social-share.css");
 
 /* import Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,300;0,600;1,300&family=Work+Sans&display=swap");
-
-/* reset */
-html,
-body,
-div,
-span,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-a,
-abbr,
-em,
-img,
-small,
-strong,
-b,
-u,
-i,
-center,
-ol,
-ul,
-li,
-form,
-footer,
-header,
-menu,
-nav,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-footer,
-header,
-nav {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-/* end of reset */
 
 /* Mobile first set up (width < 600px) */
 /* container*/
@@ -230,8 +177,8 @@ h6 {
 .fixed-home {
   position: fixed;
   top: 0;
-  right: 5%;
-  margin: 2.4rem 0 0 0;
+  right: 1%;
+  margin: -1% 2% 0 0;
   z-index: 99;
 }
 
@@ -606,9 +553,9 @@ form.search::after {
 /* TOP button fixed to bottom of page */
 .fixed-bottom {
   position: fixed;
-  bottom: 0px;
-  right: 5%;
-  margin: 2.4rem 0;
+  bottom: 1%;
+  right: 1%;
+  margin: 0 2% 0 0;
   z-index: 98;
 }
 
@@ -670,6 +617,8 @@ form.search::after {
   /* medium screen home and top buttons */
   .fixed-home {
     top: 1rem;
+    right: 5%;
+    margin: 2.4rem 0 0 0;
   }
 
   .fixed-home button {
@@ -876,4 +825,5 @@ form.search::after {
     padding: 1rem;
     margin: 2rem 0;
   }
+
 } /* end media for medium screens */
