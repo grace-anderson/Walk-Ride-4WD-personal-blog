@@ -1,16 +1,16 @@
 /* import css */
-@import url("../css/reset.css");
-@import url("../css/headers.css");
-@import url("../css/headings.css");
-@import url("../css/text.css");
-@import url("../css/lists.css");
-@import url("../css/links.css");
-@import url("../css/buttons.css");
-@import url("../css/figure.css");
-@import url("../css/social-share.css");
-@import url("../css/search.css");
-@import url("../css/subscribe.css");
-@import url("../css/footer.css");
+@import url("reset.css");
+@import url("headers.css");
+@import url("headings.css");
+@import url("text.css");
+@import url("lists.css");
+@import url("links.css");
+@import url("buttons.css");
+@import url("figure.css");
+@import url("social-share.css");
+@import url("search.css");
+@import url("subscribe.css");
+@import url("footer.css");
 
 /* import Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,300;0,600;1,300&family=Work+Sans&display=swap");
