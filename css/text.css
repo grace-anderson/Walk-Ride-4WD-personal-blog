@@ -1,0 +1,68 @@
+html {
+  font-size: 62.5%;
+  word-wrap: break-word;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Taviraj", serif;
+}
+
+.emphasised-body-text {
+  font-family: "Work Sans", sans-serif;
+  color: #595738;
+}
+
+.body-text {
+    font-family: "Taviraj", serif;
+}
+
+p {
+  padding: 1rem 0;
+  line-height: 2.4rem;
+}
+
+em {
+  font-weight: 300;
+  font-style: italic;
+}
+
+strong {
+  font-weight: 600;
+}
+
+.small {
+  font-size: 1.2rem;
+  font-family: "Work Sans", sans-serif;
+}
+
+.footer {
+  font-family: "Work Sans", sans-serif;
+  color: #fff;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.center {
+  text-align: center;
+}
+
+blockquote {
+  font-style: italic;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.blue-text {
+    color: #1b80bf;
+}
+
+.light-green-text {
+    color: #8a8c56;
+}
+
+.red-text {
+    color: #f2071b;
+}

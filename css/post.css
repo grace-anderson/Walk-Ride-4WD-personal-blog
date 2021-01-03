@@ -2,58 +2,10 @@
 @import url("/css/reset.css");
 @import url("/css/social-share.css");
 @import url("/css/headings.css");
+@import url("/css/text.css");
 
 /* import Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,300;0,600;1,300&family=Work+Sans&display=swap");
-
-/* text */
-html {
-  font-size: 62.5%;
-  word-wrap: break-word;
-}
-
-body {
-  font-size: 1.6rem;
-  font-family: "Taviraj", serif;
-}
-
-p {
-  padding: 1rem 0;
-  line-height: 2.4rem;
-}
-
-em {
-  font-weight: 300;
-  font-style: italic;
-}
-
-strong {
-  font-weight: 600;
-}
-
-.small {
-  font-size: 1.2rem;
-  font-family: "Work Sans", sans-serif;
-}
-
-.footer {
-  font-family: "Work Sans", sans-serif;
-  color: #fff;
-}
-
-.underline {
-  text-decoration: underline;
-}
-
-.center {
-  text-align: center;
-}
-
-blockquote {
-  font-style: italic;
-  line-height: 2rem;
-  text-align: center;
-}
 
 /*lists */
 ul {
