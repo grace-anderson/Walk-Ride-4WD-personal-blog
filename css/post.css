@@ -1,15 +1,15 @@
 /* import css */
-@import url("/css/reset.css");
-@import url("/css/headers.css");
-@import url("/css/headings.css");
-@import url("/css/text.css");
-@import url("/css/lists.css");
-@import url("/css/links.css");
-@import url("/css/buttons.css");
-@import url("/css/figure.css");
-@import url("/css/social-share.css");
-@import url("/css/search.css");
-@import url("/css/footer.css");
+@import url("../css/reset.css");
+@import url("../css/headers.css");
+@import url("../css/headings.css");
+@import url("../css/text.css");
+@import url("../css/lists.css");
+@import url("../css/links.css");
+@import url("../css/buttons.css");
+@import url("../css/figure.css");
+@import url("../css/social-share.css");
+@import url("../css/search.css");
+@import url("../css/footer.css");
 
 /* import Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,300;0,600;1,300&family=Work+Sans&display=swap");
