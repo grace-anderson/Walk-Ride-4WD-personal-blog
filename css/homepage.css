@@ -1,28 +1,13 @@
 /* import css */
 @import url("/css/reset.css");
-@import url("/css/social-share.css");
-@import url("/css/subscribe.css");
 @import url("/css/headings.css");
 @import url("/css/text.css");
+@import url("/css/lists.css");
+@import url("/css/social-share.css");
+@import url("/css/subscribe.css");
 
 /* import Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,300;0,600;1,300&family=Work+Sans&display=swap");
-
-/*lists */
-ul {
-  margin: 1rem 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-ol {
-  list-style-position: inside;
-  list-style-type: decimal;
-}
-
-li {
-  padding: 1rem 0;
-}
 
 /* form */
 form {
