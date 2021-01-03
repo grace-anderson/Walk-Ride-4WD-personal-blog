@@ -1,0 +1,11 @@
+
+/* homepage and post page  - not used by design-system page */
+figure img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  figcaption {
+    margin-bottom: 2rem;
+  }
+  

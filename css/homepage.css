@@ -5,6 +5,7 @@
 @import url("/css/lists.css");
 @import url("/css/links.css");
 @import url("/css/buttons.css");
+@import url("/css/figure.css");
 @import url("/css/social-share.css");
 @import url("/css/subscribe.css");
 
@@ -119,15 +120,6 @@ form {
 .post-heading {
   text-align: center;
   margin-bottom: 3rem;
-}
-
-figure img {
-  max-width: 100%;
-  height: auto;
-}
-
-figcaption {
-  margin-bottom: 2rem;
 }
 
 /* avatar*/

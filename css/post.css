@@ -5,6 +5,7 @@
 @import url("/css/lists.css");
 @import url("/css/links.css");
 @import url("/css/buttons.css");
+@import url("/css/figure.css");
 @import url("/css/social-share.css");
 
 /* import Google fonts */
@@ -88,16 +89,6 @@
   text-align: left;
   margin-left: 0.2rem;
   font-size: 1.2rem;
-}
-
-/* post photo */
-figure img {
-  max-width: 100%;
-  height: auto;
-}
-
-figcaption {
-  margin-bottom: 2rem;
 }
 
 /* subscribe */
