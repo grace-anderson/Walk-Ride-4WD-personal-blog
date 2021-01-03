@@ -3,6 +3,7 @@
 @import url("/css/headings.css");
 @import url("/css/text.css");
 @import url("/css/lists.css");
+@import url("/css/links.css");
 @import url("/css/social-share.css");
 @import url("/css/subscribe.css");
 
@@ -12,27 +13,6 @@
 /* form */
 form {
   border: none;
-}
-
-/* links */
-/* unvisited link */
-a:link {
-  color: #5496bf;
-  text-decoration: none;
-}
-
-/* visited link */
-a:visited {
-  color: #8a8c56;
-  text-decoration: none;
-}
-
-/* mouse over link, selected link */
-a:hover,
-a:active {
-  color: #f2071b;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 /* Navbar (mobile < 600px) */
