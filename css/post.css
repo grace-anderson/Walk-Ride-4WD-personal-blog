@@ -137,7 +137,7 @@
     flex-direction: column;
     align-content: space-around;
   }
-/* end container for medium screen */
+  /* end container for medium screen */
 
   .subscribe-button {
     margin-bottom: 0;
@@ -158,4 +158,38 @@
   #hide-top {
     display: none;
   }
-} 
+}
+
+/*-------------------------------------------------------------------------*/
+/* Screens 600px and over - landscape orientation*/
+@media only screen and (orientation: landscape) and (min-width: 600px) {
+  /* HOME button */
+  .fixed-home {
+    position: fixed;
+    top: 2%;
+    right: 1%;
+    margin: -1% 0 0 0;
+    z-index: 99;
+  }
+
+  .fixed-home button {
+    padding: 1rem;
+  }
+
+  /* TOP button */
+  .fixed-bottom {
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    margin: 0;
+    z-index: 98;
+  }
+
+  .fixed-bottom button {
+    padding: 1rem;
+  }
+
+  #hide-top {
+    display: initial;
+  }
+}
