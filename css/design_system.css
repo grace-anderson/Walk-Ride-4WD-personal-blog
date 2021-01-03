@@ -6,6 +6,7 @@
 @import url("/css/links.css");
 @import url("/css/buttons.css");
 @import url("/css/social-share.css");
+@import url("/css/search.css");
 
 /* import Google fonts */
 @import url("https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,300;0,600;1,300&family=Work+Sans&display=swap");
@@ -272,43 +273,6 @@ figcaption {
   margin-bottom: 3rem;
 }
 
-/* search */
-.search {
-  box-sizing: border-box;
-  margin: 5rem 0;
-}
-
-form.search input[type="text"] {
-  padding: 10px;
-  font-size: 1.5rem;
-  border: 1px solid #444;
-  float: left;
-  width: 70%;
-  background: #f1f1f1;
-}
-
-form.search button {
-  float: left;
-  width: 20%;
-  padding: 10px;
-  background: #1b80bf;
-  color: white;
-  font-size: 1.5rem;
-  border: 1px solid #444;
-  border-left: none;
-  cursor: pointer;
-}
-
-form.search button:hover {
-  background: #5496bf;
-}
-
-form.search::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
 /* TOP button fixed to bottom of page */
 .fixed-bottom {
   position: fixed;
@@ -365,12 +329,6 @@ form.search::after {
   .container {
     width: 90%;
     margin: auto;
-  }
-
-  /* medium screen - text */
-  blockquote {
-    line-height: 2.6rem;
-    font-size: 2rem;
   }
 
   /* medium screen home and top buttons */

@@ -14,7 +14,7 @@ body {
 }
 
 .body-text {
-    font-family: "Taviraj", serif;
+  font-family: "Taviraj", serif;
 }
 
 p {
@@ -56,13 +56,21 @@ blockquote {
 }
 
 .light-blue-text {
-    color: #5496bf;
+  color: #5496bf;
 }
 
 .light-green-text {
-    color: #8a8c56;
+  color: #8a8c56;
 }
 
 .red-text {
-    color: #f2071b;
+  color: #f2071b;
+}
+
+/* media query for 600px and greater ------------------------------------------------------------------------------------------------------ */
+@media (min-width: 600px) {
+  blockquote {
+    line-height: 2.6rem;
+    font-size: 2rem;
+  }
 }

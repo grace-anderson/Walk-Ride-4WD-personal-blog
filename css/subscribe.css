@@ -7,13 +7,9 @@
 }
 
 /* Style the form element with a border around it */
-form {
-    border: 4px solid #ccc;
-  }
-  
   /* Add some padding and blue background color to containers */
   .subscribe-container {
-    padding: 1rem 2rem;
+    padding: 1rem 2rem 2rem;
     background-color: #8a8c56;
   }
   
@@ -22,7 +18,7 @@ form {
     font-family: "Work Sans", sans-serif;
     width: 100%;
     padding: 12px;
-    margin: 8px 0;
+    margin: 0;
     display: inline-block;
     border: 1px solid #ccc;
     box-sizing: border-box;

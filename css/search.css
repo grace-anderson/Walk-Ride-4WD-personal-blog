@@ -1,0 +1,35 @@
+/* search form */
+.search {
+    box-sizing: border-box;
+    margin: 5rem 0;
+  }
+  
+  form.search input[type="text"] {
+    padding: 1rem;
+    font-size: 1.6rem;
+    border: 1px solid #444;
+    float: left;
+    width: 70%;
+    background: #f1f1f1;
+  }
+  
+  form.search button {
+    padding: 1rem;
+    font-size: 1.8rem;
+    border: none;
+    float: left;
+    width: 20%;
+    background: #1b80bf;
+    color: white;
+    cursor: pointer;
+  }
+  
+  form.search button:hover {
+    background: #5496bf;
+  }
+  
+  form.search::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
